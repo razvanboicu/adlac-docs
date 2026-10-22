@@ -1,0 +1,370 @@
+{
+  "generated": 40,
+  "sections": 25,
+  "feature_guides": 15,
+  "entries": [
+    {
+      "title": "Announcement bar",
+      "summary": "Display a short store-wide announcement in the header area. ADLAC supports desktop and mobile text, an optional link, presentation controls and color settings.",
+      "keywords": "Announcement bar section theme editor sections/announcement-bar.liquid Text Mobile text Link Open link in a new window Show arrow Badge text Icon Bar width Maximum width Alignment Minimum height Font size Horizontal padding Use rounded card Corner radius Use theme colors Enable glass effect Glass opacity Glass blur Background color Text color Border color Accent color",
+      "href": "sections/announcement-bar/index.html"
+    },
+    {
+      "title": "Immersive media banner",
+      "summary": "Build an immersive first impression using images, slides or Shopify-hosted video and an optional content block.",
+      "keywords": "Immersive media banner section theme editor sections/image-banner.liquid Media type Desktop image Mobile image Slide 1 image Slide 1 mobile image (optional) Slide 2 image Slide 2 mobile image (optional) Slide 3 image Slide 3 mobile image (optional) Autoplay slideshow Change slide every Slide transition Transition duration Glass blur strength Desktop video Mobile video Autoplay video Loop video Mute video Show native video controls Show play / pause control Media motion Motion duration Desktop width Custom hero width (% of viewport) Corner radius Desktop height Mobile layout Mobile media height Overlay style Overlay color Desktop overlay strength Mobile overlay strength Desktop text color Mobile text color Mobile content background Enable adaptive ambient glow Glow source Custom glow color Glow strength Content",
+      "href": "sections/immersive-media-banner/index.html"
+    },
+    {
+      "title": "Slideshow",
+      "summary": "Create a slide-based visual introduction with adjustable heights, transitions and slide content.",
+      "keywords": "Slideshow section theme editor sections/slideshow.liquid Height on large screens Height on mobile Enable slide transitions Transition effect Transition duration Enable image effects Image effect Image effect duration Show arrows Show slide indicators Enable autoplay Change slides every Slide",
+      "href": "sections/slideshow/index.html"
+    },
+    {
+      "title": "Image with text",
+      "summary": "Pair imagery with written content and adjust image position, width and presentation.",
+      "keywords": "Image with text section theme editor sections/image-with-text.liquid Image Mobile image Image position Image width Image height Image height on mobile Image fit Image corner radius Space between image and content Eyebrow Heading Text Primary button label Primary button link Secondary button label Secondary button link Vertical alignment Text alignment Background color Text color",
+      "href": "sections/image-with-text/index.html"
+    },
+    {
+      "title": "Rich text",
+      "summary": "Present messaging, a headline and supporting text without relying on large product media.",
+      "keywords": "Rich text section theme editor sections/rich-text.liquid Eyebrow Heading Text Primary button label Primary button link Secondary button label Secondary button link Alignment Content width Use card background Card corner radius Top padding Bottom padding Background color Text color",
+      "href": "sections/rich-text/index.html"
+    },
+    {
+      "title": "Multicolumn",
+      "summary": "Present multiple columns of content with optional imagery or icons.",
+      "keywords": "Multicolumn section theme editor sections/multicolumn.liquid Eyebrow Heading Text Heading alignment Desktop columns Mobile columns Grid spacing Card style Card padding Card corner radius Icon size Use section background Section background Card background Text color Border color Column",
+      "href": "sections/multicolumn/index.html"
+    },
+    {
+      "title": "Collapsible content",
+      "summary": "Organize frequently asked questions or supporting information into collapsible rows.",
+      "keywords": "Collapsible content section theme editor sections/collapsible-content.liquid Eyebrow Heading Text Alignment Content width Row style Open first row Allow multiple rows open Space between rows Row corner radius Row background Text color Border color Row",
+      "href": "sections/collapsible-content/index.html"
+    },
+    {
+      "title": "Newsletter",
+      "summary": "Add an email signup section with editable headline and supporting text.",
+      "keywords": "Newsletter section theme editor sections/newsletter.liquid Eyebrow Heading Text Button label Disclaimer Alignment Content width Use card background Card corner radius Top padding Bottom padding Background color Text color Input background Input text color",
+      "href": "sections/newsletter/index.html"
+    },
+    {
+      "title": "Featured collection",
+      "summary": "Highlight products from a selected collection in a product-grid style layout.",
+      "keywords": "Featured collection section theme editor sections/featured-collection.liquid Eyebrow Heading Collection Products to show Desktop columns Image ratio Image fit Show second image on hover Show view all link Show quick add Show color swatches Maximum swatches",
+      "href": "sections/featured-collection/index.html"
+    },
+    {
+      "title": "Featured product",
+      "summary": "Feature a product with product information and purchase-related blocks.",
+      "keywords": "Featured product section theme editor sections/featured-product.liquid Product Media position Media to show Media width Maximum media width Space between images Show product details link Vendor Title Price Variant picker Quantity selector Purchase options Buy buttons Description Custom Liquid",
+      "href": "sections/featured-product/index.html"
+    },
+    {
+      "title": "Collection list",
+      "summary": "Link visitors to curated collections with optional custom imagery and titles.",
+      "keywords": "Collection list section theme editor sections/collection-list.liquid Eyebrow Heading Text Show view all link Desktop columns Mobile columns Grid spacing Image ratio Card corner radius Content position Text alignment Show product count Show collection description Description length Show arrow Overlay color Overlay opacity Text color Collection",
+      "href": "sections/collection-list/index.html"
+    },
+    {
+      "title": "Product mosaic",
+      "summary": "Arrange products from a selected collection in a mosaic-style presentation.",
+      "keywords": "Product mosaic section theme editor sections/collection-product-mosaic.liquid Collection Products to show Eyebrow Show collection heading Custom heading Custom text Show collection link Collection link label Desktop layout Desktop columns Rail card size Mosaic offset Mobile layout Mobile carousel autoscroll Product image fit Product image presentation Image inset spacing Show product information Show vendor Show price Show quick add Show color swatches Maximum swatches Swatch visibility Card spacing Section corner radius Card corner radius Use theme colors Enable glass effect Glass opacity Glass blur Section background Card background Text color Accent color",
+      "href": "sections/product-mosaic/index.html"
+    },
+    {
+      "title": "Collection showcase",
+      "summary": "Present collections with custom images, headings and descriptive card content.",
+      "keywords": "Collection showcase section theme editor sections/collection-showcase.liquid Eyebrow Heading Text View all label View all link Fallback collection for View all Desktop layout Desktop columns Mobile layout Show product count Show collection description Description length Image fit Hover effect Card minimum height Card spacing Section corner radius Card corner radius Image overlay strength Use theme colors Enable glass effect Glass opacity Glass blur Section background Card background Text color Accent color Collection",
+      "href": "sections/collection-showcase/index.html"
+    },
+    {
+      "title": "Pre-order + accessories",
+      "summary": "Present a featured pre-order product alongside selected accessory items.",
+      "keywords": "Pre-order + accessories section theme editor sections/preorder-accessories.liquid Featured product Custom featured image Eyebrow Custom title Text Show featured price Price prefix Button label Custom button link Availability text Content position Heading View all label View all link Show vendor Show quick add Desktop columns Featured panel width Section minimum height Panel spacing Section corner radius Card corner radius Featured image fit Mobile accessories layout Mobile carousel autoscroll Use theme colors Enable glass effect Glass opacity Glass blur Section background Panel background Accessory card background Text color Accent color Accent text color Accessory product",
+      "href": "sections/preorder-accessories/index.html"
+    },
+    {
+      "title": "Product stage",
+      "summary": "Display featured product content in a visual stage layout with product details and media.",
+      "keywords": "Product stage section theme editor sections/product-stage.liquid Show vendor Show price Show product specifications Autoplay products Change product every Transition Show navigation arrows Show product tabs Show pause button Maximum section width Desktop stage height Content width Corner radius Image corner radius Image frame width Image frame height Image fit Top spacing Bottom spacing Featured product",
+      "href": "sections/product-stage/index.html"
+    },
+    {
+      "title": "Shot on product",
+      "summary": "Show product-related content and camera specifications in an editorial layout.",
+      "keywords": "Shot on product section theme editor sections/shot-on-product.liquid Product Show product card Show product image Show vendor Show price Eyebrow Heading Text Button label Heading size on desktop Heading size on mobile Body text size Eyebrow size Specification text size Video source Video YouTube or Vimeo URL Cover image Autoplay video Loop video Mute video Show native video controls Video position Mobile order Video width Video aspect ratio Section maximum width Space between video and content Section corner radius Video corner radius Text alignment Show colored video glow Top spacing Bottom spacing Content style Use theme colors Section background Content surface Text color Accent color Camera specification",
+      "href": "sections/shot-on-product/index.html"
+    },
+    {
+      "title": "Video story",
+      "summary": "Feature a video story using hosted or external video, with optional content blocks.",
+      "keywords": "Video story section theme editor sections/video-story.liquid Video source Video YouTube or Vimeo URL Cover image Show play label Autoplay video Loop video Mute video Layout Aspect ratio Full width Space between media and content Media corner radius Show media shadow Top padding Bottom padding Background color Media background Text color Content",
+      "href": "sections/video-story/index.html"
+    },
+    {
+      "title": "Blog posts",
+      "summary": "Surface recent articles from a selected Shopify blog.",
+      "keywords": "Blog posts section theme editor sections/blog-posts.liquid Blog Eyebrow Heading Text Articles to show Desktop columns Grid spacing Image corner radius Show article metadata Show publication date Show author Show excerpt Excerpt length Show tags Show view all link",
+      "href": "sections/blog-posts/index.html"
+    },
+    {
+      "title": "Custom Liquid",
+      "summary": "Add merchant-authored Liquid in a dedicated section, with a full-width layout option.",
+      "keywords": "Custom Liquid section theme editor sections/custom-section.liquid Custom Liquid Full width",
+      "href": "sections/custom-liquid/index.html"
+    },
+    {
+      "title": "Section",
+      "summary": "A general-purpose section container that can accept compatible Shopify app blocks.",
+      "keywords": "Section section theme editor sections/_blocks.liquid Full width Top padding Bottom padding",
+      "href": "sections/section-blocks/index.html"
+    },
+    {
+      "title": "Header",
+      "summary": "Set up the storefront header, logo, menus, search entry point and navigation blocks.",
+      "keywords": "Header section theme editor sections/header.liquid Logo Logo width Menu Sticky header Show search Rotate search placeholder text Search label 1 Search label 2 Search label 3 Change search text every Header corner radius Customer account menu Mega menu — columns Mega menu — visual grid Compact dropdown",
+      "href": "sections/header/index.html"
+    },
+    {
+      "title": "Footer",
+      "summary": "Configure the footer menu, email signup, social links, payment icons and localization controls.",
+      "keywords": "Footer section theme editor sections/footer.liquid Menu Show newsletter signup Show social media icons Show Follow on Shop Show payment icons",
+      "href": "sections/footer/index.html"
+    },
+    {
+      "title": "Main product",
+      "summary": "Configure the primary product template, product media and its reorderable information blocks.",
+      "keywords": "Main product section theme editor sections/main-product.liquid Media width Media ratio Media fit Image spacing Show desktop thumbnails Show media counter _product-vendor _product-title _product-price _product-variant-picker _product-quantity _product-pickup-availability _product-purchase-options _product-buy-buttons _product-information-tabs _product-description _product-specifications _product-custom-liquid",
+      "href": "sections/main-product/index.html"
+    },
+    {
+      "title": "Collection",
+      "summary": "Control the collection template: header, product card options, sorting and filters.",
+      "keywords": "Collection section theme editor sections/collection.liquid Show collection title Title size — desktop Title size — mobile Show collection description Description text size Text maximum width Header layout Show collection image Image position Image width Image height — desktop Image height — mobile Collection image fit Image corner radius Space between text and image Top spacing Space below header Show quick add Show color swatches Maximum swatches Show second image on hover Image ratio Product image presentation Product image spacing Image fit",
+      "href": "sections/collection/index.html"
+    },
+    {
+      "title": "Search",
+      "summary": "Configure the Shopify search results template and product-card display.",
+      "keywords": "Search section theme editor sections/search.liquid Show quick add Show color swatches Maximum swatches Show second image on hover Image ratio Image fit",
+      "href": "sections/search/index.html"
+    },
+    {
+      "title": "Mega menu — columns",
+      "summary": "Use a column-based mega menu for a top-level navigation item, with optional product promotions.",
+      "keywords": "mega navigation columns promotions menu block Choose the top-level menu item to enhance. Set the number of menu columns. Add up to two optional promotional products with descriptions. Control promotional image ratio, image corner radius, and whether promotion prices are shown.",
+      "href": "guides/mega-menu-columns/index.html"
+    },
+    {
+      "title": "Mega menu — visual grid",
+      "summary": "Present submenu links as visual cards and control how images appear.",
+      "keywords": "mega grid cards images navigation child item The visual grid displays child navigation items as visual cards. You can control the desktop columns, frame style, media area size, image spacing, fit, scale, and corner radius. Up to eight custom images can be supplied; when possible, the theme can use imagery associated with linked products or collections.",
+      "href": "guides/mega-menu-visual-grid/index.html"
+    },
+    {
+      "title": "Compact dropdown",
+      "summary": "Choose a compact navigation dropdown when a full mega menu is unnecessary.",
+      "keywords": "menu dropdown width narrow medium wide Use Compact dropdown when a top-level item needs a simple menu rather than a large mega menu. The block lets you select a narrow, medium, or wide dropdown width.",
+      "href": "guides/compact-dropdown/index.html"
+    },
+    {
+      "title": "Header predictive search",
+      "summary": "Configure the search experience offered from the storefront header.",
+      "keywords": "predictive search search suggestions header placeholder When search is enabled in the Header, ADLAC can render predictive search suggestions. The rotating placeholder labels are configured in the Header section.",
+      "href": "guides/header-predictive-search/index.html"
+    },
+    {
+      "title": "Product media gallery",
+      "summary": "Set up product gallery media, including Shopify images and supported video or 3D media.",
+      "keywords": "product gallery images videos model 3d thumbnails desktop The Main product media gallery supports product images, Shopify-hosted video, external video, and 3D models. Merchants can configure media width, media ratio, media fit, image spacing, desktop thumbnails, and the media counter.",
+      "href": "guides/product-media-gallery/index.html"
+    },
+    {
+      "title": "Product information tabs",
+      "summary": "Place descriptions, technical specifications and compatible app content in product tabs.",
+      "keywords": "tabs description specifications reviews custom liquid app blocks Add a Product information tabs block, then add one or more Information tab children. A tab can contain Product description, Product specifications, Custom Liquid, or compatible app blocks. Tab labels can be set to Description, Technical specifications, Reviews, or Custom. Reviews can optionally show a rating summary when the installed review app maintains Shopify's standard product rating metafields.",
+      "href": "guides/product-information-tabs/index.html"
+    },
+    {
+      "title": "Gift card recipient fields",
+      "summary": "Understand the gift card recipient experience exposed by compatible product purchase controls.",
+      "keywords": "gift card recipient gift cards buy buttons email Gift card products can show the recipient form inside Buy buttons. The customer can provide a recipient email, optional name and message, and an optional send date. Accelerated checkout is not rendered for gift card products in this block.",
+      "href": "guides/gift-card-recipient/index.html"
+    },
+    {
+      "title": "Product recommendations",
+      "summary": "Use the related-product experience documented for the ADLAC product template.",
+      "keywords": "recommended products related products complementary The default product template includes separate complementary and related Product recommendations sections. Their product cards can show secondary images, swatches, Quick Buy, and configurable image presentation.",
+      "href": "guides/product-recommendations/index.html"
+    },
+    {
+      "title": "Product cards & swatches",
+      "summary": "Control collection product cards, including applicable swatch and quick-add choices.",
+      "keywords": "color swatches quick add cards collection images Collection product cards can show Quick Buy, color swatches, a secondary image on hover, and configurable media ratio/presentation/spacing/fit. Swatches preview matching variant images on pointer hover or keyboard focus. The preview is temporary; the original card image returns when the interaction ends.",
+      "href": "guides/product-cards-swatches/index.html"
+    },
+    {
+      "title": "Collection filtering & sorting",
+      "summary": "Configure the filtering and sorting experience on collection pages.",
+      "keywords": "filter sorting facets search discovery collection The collection template renders Shopify-native storefront filters, active filter chips, price ranges, sorting, a desktop filter form, and a mobile filter drawer. Available filters come from the store's Shopify filter configuration.",
+      "href": "guides/collection-filters-sorting/index.html"
+    },
+    {
+      "title": "Cart drawer",
+      "summary": "Understand the ADLAC cart drawer experience for AJAX cart changes.",
+      "keywords": "ajax add to cart cart drawer discounts quantity The cart drawer is rendered globally and can show a cart note. It supports line-item updates and is refreshed by the theme's AJAX cart behavior after eligible add-to-cart actions.",
+      "href": "guides/cart-drawer/index.html"
+    },
+    {
+      "title": "Footer newsletter",
+      "summary": "Configure the newsletter signup control in the footer.",
+      "keywords": "email signup footer newsletter form The newsletter uses Shopify's customer form and tags submitted contacts as newsletter . Success and error messages are rendered by the theme.",
+      "href": "guides/footer-newsletter/index.html"
+    },
+    {
+      "title": "Country & language selectors",
+      "summary": "Make language and country choices available where configured and supported by Shopify Markets.",
+      "keywords": "locale localization countries languages markets currency When more than one language or country is available, the footer renders language and country/currency selectors using Shopify's localization form. Country changes preserve the current storefront path while allowing Shopify to apply the selected market context.",
+      "href": "guides/country-language-selectors/index.html"
+    },
+    {
+      "title": "Reviews in product tabs",
+      "summary": "Place an app-powered review experience inside ADLAC product information tabs.",
+      "keywords": "reviews app block rating metafields tab widget Install your review app Install a Shopify review app that provides a theme app block for product reviews. Open the product template In the theme editor, open the default product template and select Main product → Product information tabs . Open or add the Reviews tab Select an Information tab and set Tab label to Reviews . Add the app block Inside that tab, choose Add block → Apps and select the review app's product review block.",
+      "href": "guides/reviews-product-tabs/index.html"
+    },
+    {
+      "title": "Variant picker & swatches",
+      "summary": "Understand the product variant picker and its supported swatch handling.",
+      "keywords": "variant picker shopify swatches option values color size linked product Variant picker Uses Shopify option values, supports Shopify swatches, unavailable states, and linked-product option URLs.",
+      "href": "guides/variant-picker-swatches/index.html"
+    }
+  ],
+  "section_groups": [
+    [
+      "Navigation & layout",
+      [
+        {
+          "title": "Announcement bar",
+          "url": "/adlac/sections/announcement-bar/index.html"
+        },
+        {
+          "title": "Header",
+          "url": "/adlac/sections/header/index.html"
+        },
+        {
+          "title": "Footer",
+          "url": "/adlac/sections/footer/index.html"
+        },
+        {
+          "title": "Section",
+          "url": "/adlac/sections/section-blocks/index.html"
+        },
+        {
+          "title": "Custom Liquid",
+          "url": "/adlac/sections/custom-liquid/index.html"
+        }
+      ]
+    ],
+    [
+      "Visual & editorial",
+      [
+        {
+          "title": "Immersive media banner",
+          "url": "/adlac/sections/immersive-media-banner/index.html"
+        },
+        {
+          "title": "Slideshow",
+          "url": "/adlac/sections/slideshow/index.html"
+        },
+        {
+          "title": "Image with text",
+          "url": "/adlac/sections/image-with-text/index.html"
+        },
+        {
+          "title": "Rich text",
+          "url": "/adlac/sections/rich-text/index.html"
+        },
+        {
+          "title": "Multicolumn",
+          "url": "/adlac/sections/multicolumn/index.html"
+        },
+        {
+          "title": "Collapsible content",
+          "url": "/adlac/sections/collapsible-content/index.html"
+        },
+        {
+          "title": "Video story",
+          "url": "/adlac/sections/video-story/index.html"
+        },
+        {
+          "title": "Blog posts",
+          "url": "/adlac/sections/blog-posts/index.html"
+        }
+      ]
+    ],
+    [
+      "Collections & commerce",
+      [
+        {
+          "title": "Newsletter",
+          "url": "/adlac/sections/newsletter/index.html"
+        },
+        {
+          "title": "Featured collection",
+          "url": "/adlac/sections/featured-collection/index.html"
+        },
+        {
+          "title": "Featured product",
+          "url": "/adlac/sections/featured-product/index.html"
+        },
+        {
+          "title": "Collection list",
+          "url": "/adlac/sections/collection-list/index.html"
+        },
+        {
+          "title": "Product mosaic",
+          "url": "/adlac/sections/product-mosaic/index.html"
+        },
+        {
+          "title": "Collection showcase",
+          "url": "/adlac/sections/collection-showcase/index.html"
+        },
+        {
+          "title": "Pre-order + accessories",
+          "url": "/adlac/sections/preorder-accessories/index.html"
+        },
+        {
+          "title": "Product stage",
+          "url": "/adlac/sections/product-stage/index.html"
+        },
+        {
+          "title": "Shot on product",
+          "url": "/adlac/sections/shot-on-product/index.html"
+        }
+      ]
+    ],
+    [
+      "Store templates",
+      [
+        {
+          "title": "Main product",
+          "url": "/adlac/sections/main-product/index.html"
+        },
+        {
+          "title": "Collection",
+          "url": "/adlac/sections/collection/index.html"
+        },
+        {
+          "title": "Search",
+          "url": "/adlac/sections/search/index.html"
+        }
+      ]
+    ]
+  ],
+  "nav": "<div class=\"sidebar-title\">Start</div>\n<a href=\"/adlac/index.html\">Overview</a>\n<a href=\"/adlac/getting-started/index.html\">Getting started</a>\n<a href=\"/adlac/theme-settings/index.html\">Theme settings</a>\n<div class=\"sidebar-title\">Store structure</div>\n<a href=\"/adlac/header-navigation/index.html\">Header &amp; navigation</a>\n<a href=\"/adlac/footer-localization/index.html\">Footer &amp; localization</a>\n<a href=\"/adlac/products/index.html\">Product page</a>\n<a href=\"/adlac/quick-buy/index.html\">Quick Buy</a>\n<a href=\"/adlac/collections/index.html\">Collections</a>\n<a href=\"/adlac/search-filtering/index.html\">Search &amp; filtering</a>\n<a href=\"/adlac/cart-checkout/index.html\">Cart &amp; checkout</a>\n<div class=\"sidebar-title\">Content</div>\n<a href=\"/adlac/homepage-sections/index.html\">Homepage &amp; sections</a>\n<a href=\"/adlac/sections-reference/index.html\">Section reference</a>\n<a href=\"/adlac/blog-pages/index.html\">Blog &amp; pages</a>\n<div class=\"sidebar-title\">Section guides</div>\n<details class=\"doc-nav-group\"><summary>Navigation &amp; layout <span class=\"nav-count\">5</span></summary>\n<a href=\"/adlac/sections/announcement-bar/index.html\">Announcement bar</a>\n<a href=\"/adlac/sections/header/index.html\">Header</a>\n<a href=\"/adlac/sections/footer/index.html\">Footer</a>\n<a href=\"/adlac/sections/section-blocks/index.html\">Section</a>\n<a href=\"/adlac/sections/custom-liquid/index.html\">Custom Liquid</a>\n</details>\n<details class=\"doc-nav-group\"><summary>Visual &amp; editorial <span class=\"nav-count\">8</span></summary>\n<a href=\"/adlac/sections/immersive-media-banner/index.html\">Immersive media banner</a>\n<a href=\"/adlac/sections/slideshow/index.html\">Slideshow</a>\n<a href=\"/adlac/sections/image-with-text/index.html\">Image with text</a>\n<a href=\"/adlac/sections/rich-text/index.html\">Rich text</a>\n<a href=\"/adlac/sections/multicolumn/index.html\">Multicolumn</a>\n<a href=\"/adlac/sections/collapsible-content/index.html\">Collapsible content</a>\n<a href=\"/adlac/sections/video-story/index.html\">Video story</a>\n<a href=\"/adlac/sections/blog-posts/index.html\">Blog posts</a>\n</details>\n<details class=\"doc-nav-group\"><summary>Collections &amp; commerce <span class=\"nav-count\">9</span></summary>\n<a href=\"/adlac/sections/newsletter/index.html\">Newsletter</a>\n<a href=\"/adlac/sections/featured-collection/index.html\">Featured collection</a>\n<a href=\"/adlac/sections/featured-product/index.html\">Featured product</a>\n<a href=\"/adlac/sections/collection-list/index.html\">Collection list</a>\n<a href=\"/adlac/sections/product-mosaic/index.html\">Product mosaic</a>\n<a href=\"/adlac/sections/collection-showcase/index.html\">Collection showcase</a>\n<a href=\"/adlac/sections/preorder-accessories/index.html\">Pre-order + accessories</a>\n<a href=\"/adlac/sections/product-stage/index.html\">Product stage</a>\n<a href=\"/adlac/sections/shot-on-product/index.html\">Shot on product</a>\n</details>\n<details class=\"doc-nav-group\"><summary>Store templates <span class=\"nav-count\">3</span></summary>\n<a href=\"/adlac/sections/main-product/index.html\">Main product</a>\n<a href=\"/adlac/sections/collection/index.html\">Collection</a>\n<a href=\"/adlac/sections/search/index.html\">Search</a>\n</details>\n<div class=\"sidebar-title\">Feature guides</div>\n<details class=\"doc-nav-group\"><summary>Feature walkthroughs <span class=\"nav-count\">15</span></summary>\n<a href=\"/adlac/guides/mega-menu-columns/index.html\">Mega menu — columns</a>\n<a href=\"/adlac/guides/mega-menu-visual-grid/index.html\">Mega menu — visual grid</a>\n<a href=\"/adlac/guides/compact-dropdown/index.html\">Compact dropdown</a>\n<a href=\"/adlac/guides/header-predictive-search/index.html\">Header predictive search</a>\n<a href=\"/adlac/guides/product-media-gallery/index.html\">Product media gallery</a>\n<a href=\"/adlac/guides/product-information-tabs/index.html\">Product information tabs</a>\n<a href=\"/adlac/guides/gift-card-recipient/index.html\">Gift card recipient fields</a>\n<a href=\"/adlac/guides/product-recommendations/index.html\">Product recommendations</a>\n<a href=\"/adlac/guides/product-cards-swatches/index.html\">Product cards &amp; swatches</a>\n<a href=\"/adlac/guides/collection-filters-sorting/index.html\">Collection filtering &amp; sorting</a>\n<a href=\"/adlac/guides/cart-drawer/index.html\">Cart drawer</a>\n<a href=\"/adlac/guides/footer-newsletter/index.html\">Footer newsletter</a>\n<a href=\"/adlac/guides/country-language-selectors/index.html\">Country &amp; language selectors</a>\n<a href=\"/adlac/guides/reviews-product-tabs/index.html\">Reviews in product tabs</a>\n<a href=\"/adlac/guides/variant-picker-swatches/index.html\">Variant picker &amp; swatches</a>\n</details>\n<div class=\"sidebar-title\">Integrations</div>\n<a href=\"/adlac/product-specifications/index.html\">Product specifications</a>\n<a href=\"/adlac/reviews-apps/index.html\">Reviews &amp; app blocks</a>\n<a href=\"/adlac/markets-localization/index.html\">Markets &amp; languages</a>\n<div class=\"sidebar-title\">Help</div>\n<a href=\"/adlac/faq/index.html\">FAQ</a>\n<a href=\"/adlac/troubleshooting/index.html\">Troubleshooting</a>\n<a href=\"/adlac/support/index.html\">Support</a>\n<a href=\"/privacy/index.html\">Privacy policy</a>\n<a href=\"/adlac/changelog/index.html\">Changelog</a>"
+}

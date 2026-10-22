@@ -19,7 +19,8 @@
         return;
       }
       const matches = window.ADLAC_SEARCH_INDEX
-        .filter(item => (item.title + ' ' + item.keywords).toLowerCase().includes(q))
+        .filter(item => (item.title + ' ' + item.summary + ' ' + item.keywords).toLowerCase().includes(q))
+        .sort((a, b) => Number(b.title.toLowerCase().includes(q)) - Number(a.title.toLowerCase().includes(q)))
         .slice(0, 8);
       results.innerHTML = matches.length
         ? matches.map(x => {
