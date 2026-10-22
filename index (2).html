@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Support — ADLAC Docs</title>
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="nav" aria-label="Primary">
+    <a class="brand" href="../index.html">ADLAC Docs</a>
+    <div class="nav-links">
+      <a href="../getting-started/index.html">Getting started</a>
+      <a href="../changelog/index.html">Changelog</a>
+      <a href="../support/index.html">Support</a>
+    </div>
+  </nav>
+</header>
+
+<main class="content">
+  <p class="eyebrow">Support</p>
+  <h1>How can we help?</h1>
+  <p class="lead">Use this page for ADLAC theme questions, configuration issues, and bug reports.</p>
+
+  <div class="note">
+    The support form is intentionally not active yet. In the next setup step we will connect it to a real form/ticket service before using this URL for Shopify Theme Store submission.
+  </div>
+
+  <form aria-label="Support request preview">
+    <label for="name">Name</label>
+    <input id="name" name="name" autocomplete="name">
+
+    <label for="email">Email</label>
+    <input id="email" name="email" type="email" autocomplete="email">
+
+    <label for="store">Store URL</label>
+    <input id="store" name="store" type="url" placeholder="https://your-store.myshopify.com">
+
+    <label for="version">Theme version</label>
+    <input id="version" name="version" value="1.0.0">
+
+    <label for="topic">Topic</label>
+    <select id="topic" name="topic">
+      <option>Theme setup</option>
+      <option>Product page</option>
+      <option>Collection page</option>
+      <option>App integration</option>
+      <option>Bug report</option>
+      <option>Other</option>
+    </select>
+
+    <label for="message">Description</label>
+    <textarea id="message" name="message"></textarea>
+
+    <button type="button" disabled>Submit request — connect form first</button>
+  </form>
+</main>
+<footer><div class="footer-inner">ADLAC Support</div></footer>
+</body>
+</html>
