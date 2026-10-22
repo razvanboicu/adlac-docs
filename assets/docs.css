@@ -147,3 +147,16 @@ hr{border:0;border-top:1px solid var(--border);margin:44px 0}
 
 /* ADLAC support Turnstile widget */
 .support-turnstile{margin:22px 0 4px;min-height:65px;max-width:100%}
+
+
+
+/* Privacy page and links */
+.footer-privacy{color:inherit;text-decoration:underline;text-underline-offset:3px}
+.policy-content h2{font-size:clamp(1.45rem,2.4vw,1.85rem);line-height:1.22;letter-spacing:-.025em}
+.policy-content p,.policy-content li{max-width:76ch}
+.policy-owner-note{background:#fff7e8;border:1px solid #f0d7ae;border-radius:14px;padding:16px 18px;margin:18px 0}
+.policy-owner-note p{margin:6px 0 0}
+.policy-owner-note mark{background:#fff1bf;padding:1px 4px;overflow-wrap:anywhere}
+.policy-sidebar a[href^="#"]{font-size:.86rem}
+.policy-content section{scroll-margin-top:100px}
+.support-consent a{font-weight:700;text-underline-offset:2px}
