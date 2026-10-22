@@ -20,6 +20,12 @@
 
     if (!form.reportValidity()) return;
 
+    const turnstileToken = form.querySelector('input[name="cf-turnstile-response"]');
+    if (!turnstileToken?.value) {
+      setStatus('Please complete the security verification before submitting.', 'error');
+      return;
+    }
+
     const file = fileInput?.files?.[0];
     if (file && file.size > maxFileBytes) {
       setStatus('The attachment is larger than 5 MB. Please choose a smaller file.', 'error');
@@ -57,13 +63,18 @@
       }
 
       const ticket = payload.ticket_id ? ` Ticket ${payload.ticket_id}.` : '';
-      setStatus(`Your request was received.${ticket} A confirmation email has been sent to you.`, 'success');
+      const confirmation = payload.confirmation_sent === false
+        ? ' We could not send the confirmation email. Please save your ticket number.'
+        : ' A confirmation email has been sent to you.';
+      setStatus(`Your request was received.${ticket}${confirmation}`, 'success');
       form.reset();
       const theme = form.querySelector('[name="theme_name"]');
       if (theme) theme.value = 'ADLAC';
     } catch (error) {
       setStatus(error?.message || 'Unable to submit your support request. Please try again.', 'error');
     } finally {
+      // Tokens expire and are single-use. Reset after any attempted submission.
+      if (window.turnstile?.reset) window.turnstile.reset();
       submit.disabled = false;
       submit.removeAttribute('aria-busy');
       submit.textContent = originalLabel;

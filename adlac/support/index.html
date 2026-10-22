@@ -73,7 +73,6 @@
 <ul><li>Custom feature development or bespoke redesign work.</li><li>Building or debugging third-party apps.</li><li>Custom coding that changes the theme outside its documented settings and extension points.</li><li>Store administration unrelated to the theme.</li></ul>
 <h2>Support request form</h2>
 <div class="callout"><strong>Before submitting</strong>Please include enough detail to reproduce the issue. Screenshots are especially useful for layout, styling, and Theme Editor problems. Do not upload customer personal data, payment information, passwords, or API credentials.</div>
-<h2>Support request form</h2>
 <form
   class="support-form"
   data-support-form
@@ -133,6 +132,15 @@
     <label for="support-consent">I understand that the information I submit will be used to respond to this support request.</label>
   </div>
 
+  <!-- Replace PASTE_PUBLIC_TURNSTILE_SITE_KEY_HERE with the PUBLIC Cloudflare Turnstile sitekey. -->
+  <div class="support-turnstile" aria-label="Security verification">
+    <div class="cf-turnstile"
+         data-sitekey="0x4AAAAAAFg8VqN1Z7e9XQV9"
+         data-action="adlac_support"
+         data-size="flexible"
+         data-theme="auto"></div>
+  </div>
+
   <button type="submit" data-support-submit>Submit support request</button>
   <p class="support-status" data-support-status role="status" aria-live="polite"></p>
 </form>
@@ -148,6 +156,7 @@
 </footer>
 
 <script src="../search-index.js"></script>
+<script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
 <script src="../../assets/support.js"></script>
 <script src="../../assets/docs.js"></script>
 </body>
