@@ -113,3 +113,34 @@ hr{border:0;border-top:1px solid var(--border);margin:44px 0}
   table{font-size:.84rem}
 }
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+.support-honeypot{
+  position:absolute!important;
+  width:1px!important;
+  height:1px!important;
+  overflow:hidden!important;
+  clip:rect(1px,1px,1px,1px)!important;
+  white-space:nowrap!important;
+}
+.support-consent{
+  display:grid;
+  grid-template-columns:auto minmax(0,1fr);
+  gap:10px;
+  align-items:start;
+  margin-top:16px;
+}
+.support-consent input{
+  width:auto;
+  margin:4px 0 0;
+}
+.support-consent label{
+  margin:0;
+  font-weight:500;
+}
+.support-status{
+  min-height:1.5em;
+  margin-top:12px;
+  color:var(--muted);
+}
+.support-status.is-success{color:var(--success)}
+.support-status.is-error{color:var(--danger)}
+.support-form button[aria-busy="true"]{cursor:progress;opacity:.7}

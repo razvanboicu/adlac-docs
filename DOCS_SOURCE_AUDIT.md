@@ -40,11 +40,22 @@ Generated: 2026-10-22
 - Support form UI contains name, email, store URL example, problem description, file upload, and theme name.
 - Two-business-day support response commitment documented.
 
-## Remaining launch blocker
+## Support backend
 
-The support form is not connected to a ticket/form backend yet. Before Theme Store submission, connect it to a service that:
-1. accepts file uploads,
-2. sends an automatic confirmation to the merchant,
-3. sends/stores the support request for Boicu Solutions.
+The support form now posts to:
 
-Once connected, remove the warning and enable the submit button.
+`https://support-api.boicusolutions.com/v1/support`
+
+The matching Cloudflare Worker package is distributed separately as `boicu-support-worker-v1.zip`.
+
+The public form includes:
+- first and last name
+- email address
+- store URL example
+- problem description
+- optional file upload
+- theme name
+- subject
+- automatic confirmation email behavior
+
+Before Theme Store submission, deploy the Worker and verify an end-to-end test submission.
