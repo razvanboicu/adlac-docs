@@ -22,7 +22,12 @@
         .filter(item => (item.title + ' ' + item.keywords).toLowerCase().includes(q))
         .slice(0, 8);
       results.innerHTML = matches.length
-        ? matches.map(x => `<a href="${x.href}"><strong>${x.title}</strong><br><span class="small">${x.summary}</span></a>`).join('')
+        ? matches.map(x => {
+            // Search-index links are relative to /adlac/, not to the current page.
+            // Preserve root-relative links such as /privacy/.
+            const href = x.href.startsWith('/') ? x.href : `/adlac/${x.href.replace(/^(\.\/)+/, '')}`;
+            return `<a href="${href}"><strong>${x.title}</strong><br><span class="small">${x.summary}</span></a>`;
+          }).join('')
         : '<div class="small" style="padding:10px">No documentation pages matched your search.</div>';
       results.classList.add('is-open');
     };
