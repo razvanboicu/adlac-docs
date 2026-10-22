@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Diagnose common issues with menus, swatches, Quick Buy, filters, reviews, media, and localization.">
+  <title>Troubleshooting — ADLAC Documentation</title>
+  <link rel="icon" href="../../assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../../assets/docs.css">
+  
+</head>
+<body>
+
+<a class="skip" href="#content">Skip to content</a>
+<header class="topbar">
+  <div class="topbar-inner">
+    <a class="brand" href="../index.html">
+      <span class="brand-mark">A</span>
+      <span>ADLAC Docs</span>
+    </a>
+    <div class="top-actions">
+      <a class="top-link hide-mobile" href="../changelog/index.html">v1.0.0</a>
+      <a class="top-link" href="../support/index.html">Support</a>
+      <button class="mobile-menu" type="button" data-mobile-menu aria-expanded="false">Menu</button>
+    </div>
+  </div>
+</header>
+
+<div class="layout">
+<nav class="sidebar" data-sidebar aria-label="Documentation">
+<div class="sidebar-title">Start</div>
+<a href="../index.html">Overview</a>
+<a href="../getting-started/index.html">Getting started</a>
+<a href="../theme-settings/index.html">Theme settings</a>
+<div class="sidebar-title">Store structure</div>
+<a href="../header-navigation/index.html">Header &amp; navigation</a>
+<a href="../footer-localization/index.html">Footer &amp; localization</a>
+<a href="../products/index.html">Product page</a>
+<a href="../quick-buy/index.html">Quick Buy</a>
+<a href="../collections/index.html">Collections</a>
+<a href="../search-filtering/index.html">Search &amp; filtering</a>
+<a href="../cart-checkout/index.html">Cart &amp; checkout</a>
+<div class="sidebar-title">Content</div>
+<a href="../homepage-sections/index.html">Homepage &amp; sections</a>
+<a href="../sections-reference/index.html">Section reference</a>
+<a href="../blog-pages/index.html">Blog &amp; pages</a>
+<div class="sidebar-title">Integrations</div>
+<a href="../product-specifications/index.html">Product specifications</a>
+<a href="../reviews-apps/index.html">Reviews &amp; app blocks</a>
+<a href="../markets-localization/index.html">Markets &amp; languages</a>
+<div class="sidebar-title">Help</div>
+<a href="../faq/index.html">FAQ</a>
+<a href="../troubleshooting/index.html" aria-current="page">Troubleshooting</a>
+<a href="../support/index.html">Support</a>
+<a href="../changelog/index.html">Changelog</a>
+</nav>
+<main class="content" id="content">
+  <div class="breadcrumbs"><a href="../index.html">ADLAC</a> / Troubleshooting</div>
+  <p class="eyebrow">Help</p>
+  <h1>Troubleshooting</h1>
+  <p class="lead">Use these checks before changing code or contacting support.</p>
+  <div class="meta"><span class="pill">ADLAC 1.0.0</span><span class="pill">Shopify Online Store 2.0</span></div>
+  <div class="search-box">
+    <label class="small" for="DocSearch-8375948955357168513">Search ADLAC documentation</label>
+    <input id="DocSearch-8375948955357168513" type="search" placeholder="Search Quick Buy, swatches, reviews, filters…" data-doc-search autocomplete="off">
+    <div class="search-results" data-search-results></div>
+  </div>
+
+<h2>Navigation block does not open</h2>
+<p>Confirm that the Mega menu or Compact dropdown block's <strong>Top-level menu item</strong> exactly matches the title of the corresponding top-level link in the selected Header menu.</p>
+<h2>Quick Buy loads the wrong product or variant</h2>
+<p>Confirm the product card links to the expected product and that variant option values/linked-product URLs are configured correctly. Test the full product page first to verify the underlying Shopify variant data.</p>
+<h2>Review widget is blank in an inactive tab</h2>
+<p>Keep the review widget as an app block inside the Reviews Information tab. ADLAC keeps inactive tab panels measurable and dispatches layout signals when tabs are shown, but some apps may still require their own refresh behavior.</p>
+<h2>Product specifications are missing</h2>
+<p>Check that the metafield definitions use the <code>specs</code> namespace and one of the supported keys, that the product has a value, and that the Product specifications block has not reached its <strong>Maximum specifications</strong> limit.</p>
+<h2>Collection/search filters are missing</h2>
+<p>Verify that Shopify has filters configured for the storefront and that the current collection/search context exposes them. ADLAC does not invent filter data.</p>
+<h2>Country or language selector is missing</h2>
+<p>The selector is only rendered when Shopify reports more than one available country or language.</p>
+<h2>Video autoplay does not start</h2>
+<p>Browser autoplay policies commonly require autoplaying video to be muted. In ADLAC media sections, use the section's Mute video setting when autoplay is enabled.</p>
+<h2>Theme Editor setting and documentation wording differ</h2>
+<p>Use the current theme version and report the mismatch. ADLAC documentation is intended to use the same merchant-facing names as the Theme Editor.</p>
+
+</main>
+</div>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <span>ADLAC theme documentation · Boicu Solutions</span>
+    <span>Merchant-facing documentation · Updated October 22, 2026</span>
+  </div>
+</footer>
+
+<script src="../search-index.js"></script>
+<script src="../../assets/docs.js"></script>
+</body>
+</html>

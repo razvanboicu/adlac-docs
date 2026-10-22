@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Add review apps and other app blocks without provider-specific theme code.">
+  <title>Reviews &amp; app blocks — ADLAC Documentation</title>
+  <link rel="icon" href="../../assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../../assets/docs.css">
+  
+</head>
+<body>
+
+<a class="skip" href="#content">Skip to content</a>
+<header class="topbar">
+  <div class="topbar-inner">
+    <a class="brand" href="../index.html">
+      <span class="brand-mark">A</span>
+      <span>ADLAC Docs</span>
+    </a>
+    <div class="top-actions">
+      <a class="top-link hide-mobile" href="../changelog/index.html">v1.0.0</a>
+      <a class="top-link" href="../support/index.html">Support</a>
+      <button class="mobile-menu" type="button" data-mobile-menu aria-expanded="false">Menu</button>
+    </div>
+  </div>
+</header>
+
+<div class="layout">
+<nav class="sidebar" data-sidebar aria-label="Documentation">
+<div class="sidebar-title">Start</div>
+<a href="../index.html">Overview</a>
+<a href="../getting-started/index.html">Getting started</a>
+<a href="../theme-settings/index.html">Theme settings</a>
+<div class="sidebar-title">Store structure</div>
+<a href="../header-navigation/index.html">Header &amp; navigation</a>
+<a href="../footer-localization/index.html">Footer &amp; localization</a>
+<a href="../products/index.html">Product page</a>
+<a href="../quick-buy/index.html">Quick Buy</a>
+<a href="../collections/index.html">Collections</a>
+<a href="../search-filtering/index.html">Search &amp; filtering</a>
+<a href="../cart-checkout/index.html">Cart &amp; checkout</a>
+<div class="sidebar-title">Content</div>
+<a href="../homepage-sections/index.html">Homepage &amp; sections</a>
+<a href="../sections-reference/index.html">Section reference</a>
+<a href="../blog-pages/index.html">Blog &amp; pages</a>
+<div class="sidebar-title">Integrations</div>
+<a href="../product-specifications/index.html">Product specifications</a>
+<a href="../reviews-apps/index.html" aria-current="page">Reviews &amp; app blocks</a>
+<a href="../markets-localization/index.html">Markets &amp; languages</a>
+<div class="sidebar-title">Help</div>
+<a href="../faq/index.html">FAQ</a>
+<a href="../troubleshooting/index.html">Troubleshooting</a>
+<a href="../support/index.html">Support</a>
+<a href="../changelog/index.html">Changelog</a>
+</nav>
+<main class="content" id="content">
+  <div class="breadcrumbs"><a href="../index.html">ADLAC</a> / Reviews &amp; app blocks</div>
+  <p class="eyebrow">Apps</p>
+  <h1>Reviews &amp; app blocks</h1>
+  <p class="lead">Add product reviews and other app content using Shopify app blocks instead of provider-specific theme integrations.</p>
+  <div class="meta"><span class="pill">ADLAC 1.0.0</span><span class="pill">Shopify Online Store 2.0</span></div>
+  <div class="search-box">
+    <label class="small" for="DocSearch-435036330014844796">Search ADLAC documentation</label>
+    <input id="DocSearch-435036330014844796" type="search" placeholder="Search Quick Buy, swatches, reviews, filters…" data-doc-search autocomplete="off">
+    <div class="search-results" data-search-results></div>
+  </div>
+
+<h2>Vendor-neutral architecture</h2>
+<p>ADLAC does not require a specific review provider to populate the Reviews tab. The product information architecture accepts Shopify app blocks inside an Information tab, so a compatible review app can render its own widget without editing theme code.</p>
+<h2>Add a review app to the Reviews tab</h2>
+<div class="steps">
+<div class="step"><h3>Install your review app</h3><p>Install a Shopify review app that provides a theme app block for product reviews.</p></div>
+<div class="step"><h3>Open the product template</h3><p>In the theme editor, open the default product template and select <strong>Main product → Product information tabs</strong>.</p></div>
+<div class="step"><h3>Open or add the Reviews tab</h3><p>Select an Information tab and set <strong>Tab label</strong> to <strong>Reviews</strong>.</p></div>
+<div class="step"><h3>Add the app block</h3><p>Inside that tab, choose <strong>Add block → Apps</strong> and select the review app's product review block.</p></div>
+</div>
+<h2>Rating summary</h2>
+<p>The Information tab includes an optional <strong>Rating summary</strong> setting. Leave it hidden unless the installed app maintains Shopify's standard product rating metafields. When enabled, the theme reads <code>product.metafields.reviews.rating</code> and <code>product.metafields.reviews.rating_count</code>.</p>
+<h2>App blocks elsewhere</h2>
+<p>The Main product section and Featured product section support app blocks at the root level. ADLAC also includes generic app-capable wrapper sections/blocks for app content that does not belong inside the product tabs.</p>
+<div class="callout"><strong>Third-party styling can vary.</strong>ADLAC provides compatible containers and native theme typography where possible, but the final markup and controls inside an app block are owned by the installed app.</div>
+
+</main>
+</div>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <span>ADLAC theme documentation · Boicu Solutions</span>
+    <span>Merchant-facing documentation · Updated October 22, 2026</span>
+  </div>
+</footer>
+
+<script src="../search-index.js"></script>
+<script src="../../assets/docs.js"></script>
+</body>
+</html>

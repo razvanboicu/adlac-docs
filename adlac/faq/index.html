@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Answers to common ADLAC setup and storefront questions.">
+  <title>FAQ — ADLAC Documentation</title>
+  <link rel="icon" href="../../assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../../assets/docs.css">
+  
+</head>
+<body>
+
+<a class="skip" href="#content">Skip to content</a>
+<header class="topbar">
+  <div class="topbar-inner">
+    <a class="brand" href="../index.html">
+      <span class="brand-mark">A</span>
+      <span>ADLAC Docs</span>
+    </a>
+    <div class="top-actions">
+      <a class="top-link hide-mobile" href="../changelog/index.html">v1.0.0</a>
+      <a class="top-link" href="../support/index.html">Support</a>
+      <button class="mobile-menu" type="button" data-mobile-menu aria-expanded="false">Menu</button>
+    </div>
+  </div>
+</header>
+
+<div class="layout">
+<nav class="sidebar" data-sidebar aria-label="Documentation">
+<div class="sidebar-title">Start</div>
+<a href="../index.html">Overview</a>
+<a href="../getting-started/index.html">Getting started</a>
+<a href="../theme-settings/index.html">Theme settings</a>
+<div class="sidebar-title">Store structure</div>
+<a href="../header-navigation/index.html">Header &amp; navigation</a>
+<a href="../footer-localization/index.html">Footer &amp; localization</a>
+<a href="../products/index.html">Product page</a>
+<a href="../quick-buy/index.html">Quick Buy</a>
+<a href="../collections/index.html">Collections</a>
+<a href="../search-filtering/index.html">Search &amp; filtering</a>
+<a href="../cart-checkout/index.html">Cart &amp; checkout</a>
+<div class="sidebar-title">Content</div>
+<a href="../homepage-sections/index.html">Homepage &amp; sections</a>
+<a href="../sections-reference/index.html">Section reference</a>
+<a href="../blog-pages/index.html">Blog &amp; pages</a>
+<div class="sidebar-title">Integrations</div>
+<a href="../product-specifications/index.html">Product specifications</a>
+<a href="../reviews-apps/index.html">Reviews &amp; app blocks</a>
+<a href="../markets-localization/index.html">Markets &amp; languages</a>
+<div class="sidebar-title">Help</div>
+<a href="../faq/index.html" aria-current="page">FAQ</a>
+<a href="../troubleshooting/index.html">Troubleshooting</a>
+<a href="../support/index.html">Support</a>
+<a href="../changelog/index.html">Changelog</a>
+</nav>
+<main class="content" id="content">
+  <div class="breadcrumbs"><a href="../index.html">ADLAC</a> / FAQ</div>
+  <p class="eyebrow">Help</p>
+  <h1>FAQ</h1>
+  <p class="lead">Common questions about ADLAC setup, product data, filters, Quick Buy, reviews, and localization.</p>
+  <div class="meta"><span class="pill">ADLAC 1.0.0</span><span class="pill">Shopify Online Store 2.0</span></div>
+  <div class="search-box">
+    <label class="small" for="DocSearch-2439907674106706391">Search ADLAC documentation</label>
+    <input id="DocSearch-2439907674106706391" type="search" placeholder="Search Quick Buy, swatches, reviews, filters…" data-doc-search autocomplete="off">
+    <div class="search-results" data-search-results></div>
+  </div>
+
+<details open><summary>Why doesn't Quick Buy open for every product?</summary><div>ADLAC sends more complex purchase flows to the full product page. Gift cards and products with selling plans are intentionally handled on the product page rather than the compact Quick Buy dialog.</div></details>
+<details><summary>Why don't color swatches appear?</summary><div>The product option must expose Shopify swatch data, and the relevant section's <strong>Show color swatches</strong> setting must be enabled. Some sections also have a swatch visibility setting.</div></details>
+<details><summary>Why doesn't a swatch change the card image?</summary><div>Variant preview requires a matching variant with featured media. If a color/option value has no matching featured image, the card keeps its current image.</div></details>
+<details><summary>Why are collection filters missing?</summary><div>ADLAC renders filters provided by Shopify. Configure storefront filters for the store first, then reload the collection or search template.</div></details>
+<details><summary>Can I use Judge.me, Loox, Yotpo, or another review app?</summary><div>Use a compatible theme app block. Add the app's product review block inside an Information tab set to Reviews. The theme does not require a specific review provider.</div></details>
+<details><summary>Why is the rating summary empty?</summary><div>The optional summary reads Shopify's standard product rating metafields. Keep it hidden unless your review app maintains those fields.</div></details>
+<details><summary>How do technical specifications work?</summary><div>Create product metafields in the <code>specs</code> namespace. ADLAC renders only filled values, up to the maximum configured in the Product specifications block.</div></details>
+<details><summary>Can the product page show video and 3D models?</summary><div>Yes. The product media component supports images, Shopify-hosted video, external video, and Shopify 3D model media.</div></details>
+<details><summary>Can I use multiple languages and countries?</summary><div>Yes. ADLAC renders Shopify localization controls in the footer when multiple languages or countries are available.</div></details>
+<details><summary>Where should I add custom app content?</summary><div>Use app blocks in Main product, Featured product, compatible generic wrapper sections, or inside a product Information tab. Use Custom Liquid only when an integration specifically provides Liquid markup rather than an app block.</div></details>
+
+</main>
+</div>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <span>ADLAC theme documentation · Boicu Solutions</span>
+    <span>Merchant-facing documentation · Updated October 22, 2026</span>
+  </div>
+</footer>
+
+<script src="../search-index.js"></script>
+<script src="../../assets/docs.js"></script>
+</body>
+</html>
