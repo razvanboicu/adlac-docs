@@ -96,11 +96,41 @@ details>div{padding:0 0 16px}
 ul,ol{padding-left:1.35rem}
 li{margin:.32rem 0}
 hr{border:0;border-top:1px solid var(--border);margin:44px 0}
+/* Mobile sidebar: fixed drawer, visible even when the page was scrolled. */
+.docs-nav-backdrop{display:none}
 @media (max-width:920px){
   .layout{grid-template-columns:1fr;gap:0}
-  .sidebar{display:none;position:static;max-height:none;padding:12px 0 0}
+  .sidebar{
+    display:none;
+    position:fixed;
+    z-index:65;
+    top:var(--docs-mobile-nav-top,64px);
+    left:0;
+    bottom:auto;
+    width:min(88vw,360px);
+    height:calc(100vh - var(--docs-mobile-nav-top,64px));
+    height:calc(100dvh - var(--docs-mobile-nav-top,64px));
+    max-height:none;
+    align-self:auto;
+    overflow-y:auto;
+    overscroll-behavior:contain;
+    padding:20px 18px max(28px, env(safe-area-inset-bottom));
+    background:var(--bg);
+    border-right:1px solid var(--border);
+    box-shadow:18px 0 45px rgba(16,17,20,.12);
+    -webkit-overflow-scrolling:touch;
+  }
   .sidebar.is-open{display:block}
-  .mobile-menu{display:inline-flex;min-height:40px;align-items:center;padding:0 12px;border:1px solid var(--border);border-radius:999px;background:#fff}
+  .docs-nav-backdrop{
+    position:fixed;
+    z-index:60;
+    inset:var(--docs-mobile-nav-top,64px) 0 0;
+    background:rgba(16,17,20,.35);
+  }
+  .docs-nav-backdrop.is-visible{display:block}
+  body.docs-nav-open{overflow:hidden}
+  .mobile-menu{display:inline-flex;min-height:40px;align-items:center;padding:0 12px;border:1px solid var(--border);border-radius:999px;background:#fff;cursor:pointer}
+  .mobile-menu:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
   .grid-3{grid-template-columns:1fr}
 }
 @media (max-width:680px){

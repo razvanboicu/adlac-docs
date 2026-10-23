@@ -1,11 +1,83 @@
 (() => {
+  // Mobile navigation is a viewport-fixed drawer. Previously the sidebar was
+  // displayed in the page flow, so opening it after scrolling looked broken.
   const menuButton = document.querySelector('[data-mobile-menu]');
   const sidebar = document.querySelector('[data-sidebar]');
   if (menuButton && sidebar) {
-    menuButton.addEventListener('click', () => {
-      const open = sidebar.classList.toggle('is-open');
-      menuButton.setAttribute('aria-expanded', String(open));
+    const mobileQuery = window.matchMedia('(max-width: 920px)');
+    const initialLabel = menuButton.textContent.trim() || 'Menu';
+    const sidebarId = sidebar.id || 'docs-mobile-navigation';
+    sidebar.id = sidebarId;
+    menuButton.setAttribute('aria-controls', sidebarId);
+    menuButton.setAttribute('aria-haspopup', 'true');
+
+    const backdrop = document.createElement('div');
+    backdrop.className = 'docs-nav-backdrop';
+    backdrop.setAttribute('aria-hidden', 'true');
+    document.body.appendChild(backdrop);
+
+    const syncTopbarHeight = () => {
+      const topbar = document.querySelector('.topbar');
+      const height = topbar ? Math.ceil(topbar.getBoundingClientRect().height) : 64;
+      document.documentElement.style.setProperty('--docs-mobile-nav-top', `${height}px`);
+    };
+
+    const isOpen = () => sidebar.classList.contains('is-open');
+    const setOpen = (open, restoreFocus = false) => {
+      const shouldOpen = Boolean(open && mobileQuery.matches);
+      sidebar.classList.toggle('is-open', shouldOpen);
+      document.body.classList.toggle('docs-nav-open', shouldOpen);
+      backdrop.classList.toggle('is-visible', shouldOpen);
+      menuButton.setAttribute('aria-expanded', String(shouldOpen));
+      menuButton.textContent = shouldOpen ? 'Close' : initialLabel;
+      // Keep the hidden navigation out of the tab order on mobile.
+      sidebar.inert = mobileQuery.matches && !shouldOpen;
+      if (shouldOpen) {
+        syncTopbarHeight();
+        sidebar.setAttribute('tabindex', '-1');
+        sidebar.focus({ preventScroll: true });
+      } else if (restoreFocus && mobileQuery.matches) {
+        menuButton.focus({ preventScroll: true });
+      }
+    };
+
+    menuButton.addEventListener('click', () => setOpen(!isOpen(), isOpen()));
+    backdrop.addEventListener('click', () => setOpen(false, true));
+    sidebar.addEventListener('click', event => {
+      if (event.target.closest('a')) setOpen(false);
     });
+    document.addEventListener('keydown', event => {
+      if (!isOpen()) return;
+      if (event.key === 'Escape') {
+        event.preventDefault();
+        setOpen(false, true);
+      }
+      if (event.key === 'Tab') {
+        // Trap keyboard focus within the open drawer and its close button.
+        const tabbable = [menuButton, ...sidebar.querySelectorAll('a[href], button:not([disabled]), summary, input:not([disabled]), select:not([disabled]), textarea:not([disabled]), [tabindex]:not([tabindex="-1"])')]
+          .filter(el => el.getClientRects().length > 0);
+        if (!tabbable.length) return;
+        const first = tabbable[0];
+        const last = tabbable[tabbable.length - 1];
+        const activeIndex = tabbable.indexOf(document.activeElement);
+        if (event.shiftKey && (document.activeElement === first || activeIndex < 0)) {
+          event.preventDefault();
+          last.focus();
+        } else if (!event.shiftKey && (document.activeElement === last || activeIndex < 0)) {
+          event.preventDefault();
+          first.focus();
+        }
+      }
+    });
+
+    const syncBreakpoint = () => {
+      syncTopbarHeight();
+      if (!mobileQuery.matches) setOpen(false);
+      else sidebar.inert = !isOpen();
+    };
+    mobileQuery.addEventListener('change', syncBreakpoint);
+    window.addEventListener('resize', syncTopbarHeight, { passive: true });
+    syncBreakpoint();
   }
 
   const search = document.querySelector('[data-doc-search]');
