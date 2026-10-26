@@ -2,7 +2,7 @@
 
 Official public documentation and support website for **ADLAC**, a Shopify Online Store 2.0 theme by **Boicu Solutions**.
 
-> Documentation currently targets **ADLAC 1.0.0**. Check that features and settings match the version of the theme you publish.
+> Documentation is synchronized with the supplied ADLAC theme archive as of **26 October 2026**. The archive declares theme version **1.0.0** in `config/settings_schema.json`; this is not a new version release. Before publishing, validate against the version deployed to Shopify.
 
 ## Live links
 
@@ -87,3 +87,9 @@ Open http://localhost:8000/adlac/ in your browser. Use the local server rather t
 The documentation is versioned alongside ADLAC's released features. When a theme section, setting, or behavior changes, update its guide and search keywords before publishing the next theme release.
 
 © 2026 Boicu Solutions. ADLAC documentation.
+
+## October 2026 documentation synchronization
+
+Section settings, block defaults, and Add section categories were synchronized with `sections/*.liquid` and `locales/en.default.schema.json` from the supplied theme archive. Additional section guides, menu links, and search/sitemap entries were generated for existing sections.
+
+The Shopify theme source archive is also available separately with non-essential code comments cleaned up. No runtime changes were intended. Git repository internals were intentionally omitted from the redistribution archives.
