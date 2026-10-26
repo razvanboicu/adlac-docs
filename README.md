@@ -2,7 +2,7 @@
 
 Official public documentation and support website for **ADLAC**, a Shopify Online Store 2.0 theme by **Boicu Solutions**.
 
-> Documentation is synchronized with the supplied ADLAC theme archive as of **26 October 2026**. The archive declares theme version **1.0.0** in `config/settings_schema.json`; this is not a new version release. Before publishing, validate against the version deployed to Shopify.
+> Documentation is synchronized with the supplied ADLAC theme archive as of **27 October 2026**. The archive declares theme version **1.0.0** in `config/settings_schema.json`; this is not a new version release. Before publishing, validate against the version deployed to Shopify.
 
 ## Live links
 
@@ -93,3 +93,12 @@ The documentation is versioned alongside ADLAC's released features. When a theme
 Section settings, block defaults, and Add section categories were synchronized with `sections/*.liquid` and `locales/en.default.schema.json` from the supplied theme archive. Additional section guides, menu links, and search/sitemap entries were generated for existing sections.
 
 The Shopify theme source archive is also available separately with non-essential code comments cleaned up. No runtime changes were intended. Git repository internals were intentionally omitted from the redistribution archives.
+
+## Theme Store launch checks (manual)
+
+- Confirm the public documentation URL, privacy page, and support form load without authentication.
+- Submit a real support test using a non-sensitive test store and confirm the ticket and email response path; the Worker deployment is separate from this repository.
+- Confirm the support inbox is monitored with responses within two business days; critical bugs must be addressed immediately.
+- Verify the privacy policy, named data controller, postal contact information, providers, and retention wording with the operator before publishing.
+- Recheck theme/version settings after final upload and keep each merchant-facing guide synchronized with Theme Editor labels.
+- Ensure the theme ZIP, demo store, and documentation all describe the same feature set.
